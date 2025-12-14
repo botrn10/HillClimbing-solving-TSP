@@ -1,42 +1,40 @@
-# Traveling Salesman Problem Solver using Genetic Algorithm
+# Introduction
 
-## Introduction
+This project presents an implementation of a solver for the **Traveling Salesman Problem (TSP)** using a **Hill Climbing**.  
+The system includes a graphical user interface built with **PyQt5** and **Matplotlib**, enabling users to observe how the hill climbing evolves over time and gradually improves the solution.
 
-This project presents an implementation of a solver for the **Traveling Salesman Problem (TSP)** using a **Genetic Algorithm (GA)**.  
-The system includes a graphical user interface built with **PyQt5** and **Matplotlib**, enabling users to observe how the genetic algorithm evolves over time and gradually improves the solution.
-
-The Traveling Salesman Problem aims to find the shortest possible route that visits each city exactly once and returns to the starting city. Since TSP is an NP-hard optimization problem, heuristic and evolutionary approaches such as Genetic Algorithms are suitable for finding near-optimal solutions in a reasonable amount of time.
+The Traveling Salesman Problem aims to find the shortest possible route that visits each city exactly once and returns to the starting city. Since TSP is an NP-hard optimization problem, heuristic and evolutionary approaches such as Hill Climbing are suitable for finding near-optimal solutions in a reasonable amount of time.
 
 ---
 
-## Artificial Intelligence Method
+# Artificial Intelligence Method
 
-- Algorithm: Genetic Algorithm
+- Algorithm: Hill Climbing
+- Category: Local Search / Heuristic Optimization
 - Key concepts applied:
-  - Population initialization
-  - Fitness evaluation based on total travel distance
-  - Selection mechanism
-  - Crossover operation
-  - Mutation operation
-  - Elitism strategy
+  - Initial solution generation
+  - Neighbor solution generation
+  - Evaluation using total travel distance
+  - Iterative improvement
+  - Termination when no better neighbor is found
 - Optimization goal: Minimize the total distance of the tour
 
 ---
 
-## Main Features
+# Main Features
 
 - Random generation of city coordinates
 - Calculation of distance matrix using Euclidean distance
-- Genetic Algorithm-based optimization process
+- Hill Climbing optimization process
 - Visualization of:
   - City positions
-  - Best tour found during evolution
+  - Current best tour
 - Graphical user interface for interaction and result display
-- Real-time updates using timers
+- Step-by-step solution improvement visualization
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - Programming Language: Python
 - Libraries and Frameworks:
@@ -48,7 +46,7 @@ The Traveling Salesman Problem aims to find the shortest possible route that vis
 
 ---
 
-## Installation and Requirements
+# Installation and Requirements
 
 Ensure that Python version 3.8 or higher is installed on your system.
 
@@ -58,7 +56,7 @@ Install the required dependencies using the following command:
 pip install pyqt5 matplotlib numpy
 ```
 
-## How to Run
+# How to Run
 
 1. Open the project folder in **Visual Studio Code**.
 2. Ensure that all required libraries are installed.
@@ -71,19 +69,19 @@ pip install pyqt5 matplotlib numpy
 
 ---
 
-## Output Description
+# Output Description
 
 - Cities are displayed as points on a two-dimensional coordinate plane.
-- The best tour found by the genetic algorithm is visualized using connecting lines between cities.
+- The best tour found by the Hill Climbing algorithm is visualized using connecting lines between cities.
 - The interface displays the total travel distance and distance matrix information.
 
 ---
 
-## Learning Outcomes
+# Learning Outcomes
 
 Through this project, the team was able to:
 
-- Apply Genetic Algorithms to solve a classical optimization problem in Artificial Intelligence.
-- Understand evolutionary computation concepts through practical implementation.
+- Apply Hill Climbing to solve a classical optimization problem in Artificial Intelligence.
+- Understand local search and heuristic optimization techniques.
 - Develop a GUI-based Artificial Intelligence application.
-- Visualize and analyze heuristic optimization processes.
+- Visualize and analyze iterative improvement processes.
